@@ -1,0 +1,21 @@
+patch sampling
+- desired voxel size of 0.2mm
+- high res imag along z axis: 0.033mm
+- 96 slices in the patch
+- 0.2 * 96 / 0.033 = 582 slices ~ 96 voxel size
+
+- load high res images at matrix size of x * y * 582 slices
+- downsample to the desrired voxel size, 0.2mm, at the factor of 0.2 / 0.033
+- then slice patches 96 * 96 * 96
+- overlap: 32 voxels
+
+- move along high res z axis, shift down by 64 voxels
+- save all slices locally
+
+
+data augmentation
+- corpping
+- downsample, upsample the 3d volume
+    - at factor from 2 to 5, (e.g. 0.2 -> 0.4 -> 0.2), uniform sampling
+    - happen after cropping - save some time
+
