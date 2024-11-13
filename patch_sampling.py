@@ -36,11 +36,13 @@ def run(high_res_imge_path, save_patches_path):
             for y in range(0, y_size, patch_size - overlap_size):
                 if x + patch_size <= x_size and y + patch_size <= y_size:
                     patch = downsampled_img[x : x + patch_size, y : y + patch_size, :]
-                    patch_filename = os.path.join(
-                        patches_path, f"{str(patch_id).zfill(8)}.npy"
-                    )
-                    np.save(patch_filename, patch)
-                    patch_id += 1
+                    avg_intensity = np.mean(patch)
+                    if avg_intensity > 600:
+                        patch_filename = os.path.join(
+                            patches_path, f"{str(patch_id).zfill(8)}.npy"
+                        )
+                        np.save(patch_filename, patch)
+                        patch_id += 1
 
         return patch_id
 
