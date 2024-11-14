@@ -19,3 +19,15 @@ data augmentation
     - at factor from 2 to 5, (e.g. 0.2 -> 0.4 -> 0.2), uniform sampling
     - happen after cropping - save some time
 
+
+img_fodler
+/d5/trevor/HRPQCT/linked_combined_toplevel/
+
+patches_folder
+/1d3/trevor_requires_more_space/3dsrct_patches/
+
+repo
+home/vbbproc/users/trevor/repos/3D_SR_CT
+
+conda activate 3dsrct
+conda activate
