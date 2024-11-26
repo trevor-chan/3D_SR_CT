@@ -22,7 +22,7 @@ def run(high_res_imge_path, save_patches_path):
                 dicom_data = pydicom.dcmread(file_path, stop_before_pixels=True)
                 dicom_files.append(file_path)
             except Exception as e:
-                print(f"Error reading non dicom file: {file_path}")
+                print(f"Reading non dicom file: {file_path}")
                 continue
         return sorted(dicom_files)
 
