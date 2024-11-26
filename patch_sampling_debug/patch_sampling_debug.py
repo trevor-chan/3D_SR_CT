@@ -30,7 +30,7 @@ def run(folder_name, image_folder_path, big_patches_path):
         print(f"Error processing folder {image_folder_path}: {e}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         print("Please pass in <folder name> <image_folder_path> <big_patches_path> as arguments")
         print("Example: python3 F03 /d5/trevor/HRPQCT/linked_combined_toplevel/F03 /1d3/trevor_requires_more_space/3dsrct_patches")
     else:
