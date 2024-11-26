@@ -31,3 +31,8 @@ home/vbbproc/users/trevor/repos/3D_SR_CT
 
 conda activate 3dsrct
 conda activate
+
+F01 folder:
+01999
+02998
+
