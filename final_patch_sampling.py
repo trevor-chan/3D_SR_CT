@@ -1,3 +1,5 @@
+# This is the final script to run patch sampling on the high resolution images :)
+
 import os
 import patch_sampling
 import sys
