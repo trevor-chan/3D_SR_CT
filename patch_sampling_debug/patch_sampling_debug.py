@@ -38,4 +38,4 @@ def run(folder_names):
 
 
 if __name__ == "__main__":
-    run()
+    run(folder_names)
