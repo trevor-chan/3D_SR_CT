@@ -2,19 +2,6 @@ import os
 import patch_sampling
 import sys
 
-# def run(big_img_folder_path, save_patches_path):
-#     for p in os.listdir(big_img_folder_path):
-#         img_folder_path = os.path.join(big_img_folder_path, p)
-#         # print(img_folder_path)
-#         # print(p)
-#         img_name = p.split("/")[-1] + "_patches"
-#         patches_folder_path = save_patches_path + '/' + img_name
-#         print(save_patches_path)
-#         print(patches_folder_path)
-#         os.mkdir(patches_folder_path)
-#         patch_sampling.run(img_folder_path, patches_folder_path)
-
-
 def run(big_img_folder_path, save_patches_path):
     for p in os.listdir(big_img_folder_path):
         img_folder_path = os.path.join(big_img_folder_path, p)
