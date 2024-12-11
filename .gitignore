@@ -1,3 +1,9 @@
 .ipynb_checkpoints/
 patches/
 __pycache__/
+*.pt
+*.pth
+*.png
+*.npy
+*.npz
+
