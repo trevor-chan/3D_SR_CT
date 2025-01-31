@@ -1,7 +1,7 @@
 # This is the final script to run patch sampling on the high resolution images :)
 
 import os
-import patch_sampling
+import pacth_sampling_script.patch_sampling as patch_sampling
 import sys
 
 def run(big_img_folder_path, save_patches_path):
