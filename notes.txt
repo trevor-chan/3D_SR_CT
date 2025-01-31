@@ -36,3 +36,15 @@ F01 folder:
 01999
 02998
 
+
+model
+
+notebooks/testing/ipynb
+
+img_reoslution: first x y
+temporal_res: z
+
+networks3D_edm2.py: 3D U-Net with 3D encoder-decoder module
+fp16 -> true: mix precision training
+
+train both 3D and 2D+1D models
