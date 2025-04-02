@@ -1,0 +1,5 @@
+Error processing folder /d5/trevor/HRPQCT/linked_combined_toplevel/0058708-01: The number of bytes of pixel data is less than expected (5363926 vs 17596128 bytes) - the dataset may be corrupted, have an invalid group 0028 element value, or the transfer syntax may be incorrect
+Error processing folder /d5/trevor/HRPQCT/linked_combined_toplevel/F01: all input arrays must have the same shape
+Error processing folder /d5/trevor/HRPQCT/linked_combined_toplevel/F03: File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+Error processing folder /d5/trevor/HRPQCT/linked_combined_toplevel/ND17348_new: File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+Error processing folder /d5/trevor/HRPQCT/linked_combined_toplevel/F26: File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
