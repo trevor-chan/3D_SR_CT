@@ -18,7 +18,7 @@ def rotation(image):
     # randomly rotates the image by 90 degrees or -90 degrees along x, y, or z axes
     axis = [(0, 1), (0, 2), (1, 2)]
     chosen_axis = random.choice(axis)
-    print("chosen_axis: ", chosen_axis)
+    # print("chosen_axis: ", chosen_axis)
     angle = np.random.choice([90, -90, 0, 180])
     return ndimage.rotate(image, angle, axes=chosen_axis, reshape=False)
 
@@ -26,7 +26,7 @@ def flip(image, flip_prob=0.5):
     # randomly choose an axis to flip
     if np.random.rand() < flip_prob:
         axis = np.random.choice([0, 1, 2])
-        print("axis: ", axis)
+        # print("axis: ", axis)
         image = np.flip(image, axis=axis)
     return image
 
@@ -35,6 +35,6 @@ def flip(image, flip_prob=0.5):
 def downsample(image):
     scale = [1, 2, 3, 4, 5]
     scale = np.random.choice(scale)
-    print("scale: ", scale)
+    # print("scale: ", scale)
     image = ndimage.zoom(image, 1/scale)
     return ndimage.zoom(image, scale)
