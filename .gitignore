@@ -7,4 +7,5 @@ __pycache__/
 *.npy
 *.npz
 test_folder/
-
+data/
+*.pkl
